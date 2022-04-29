@@ -11,6 +11,12 @@ public class Order {
     }
 
     public int total(){
+        if (delivery instanceof ShopeeDelivery){
+
+        }
+        else {
+            return amount+shipFeed;
+        }
         return amount+shipFeed;
     }
 }
